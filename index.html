@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alain HR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body class="font-body bg-green-300 text-gray-700 text-xl">
+    <!-- main app container -->
+    <div class="flex justify-center items-center mt-8">
+        <!-- parent div to the two navigation and content container -->
+        <div class="md:grid md:grid-cols-4">
+            <!-- navigation container -->
+            <div class="md:col-span-1 bg-purple-400 text-center md:text-right h-96">
+                <div>
+                    <div class="uppercase text-3xl font-bold p-4 text-gray-800">
+                        <span class="border-b-4 border-gray-700">Alain HR</span>
+                    </div>
+                    <div class="p-4">
+                        <div class="mb-4"><button
+                                class="bg-green-100 px-4 py-2 rounded hover:bg-green-400 focus:outline-none"
+                                id="new-employee">New
+                                Employee</button></div>
+                        <div class="mb-4"><button
+                                class="bg-green-100 px-4 py-2 rounded hover:bg-green-400 focus:outline-none"
+                                id="double-salary">Double
+                                Salary</button>
+                        </div>
+                        <div class="mb-4"><button
+                                class="bg-green-100 px-4 py-2 rounded hover:bg-green-400 focus:outline-none"
+                                id="sort-highest-paid">Sort by
+                                Highest Paid</button>
+                        </div>
+                        <div class="mb-4"><button
+                                class="bg-green-100 px-4 py-2 rounded hover:bg-green-400 focus:outline-none"
+                                id="filter-half-million-salary">Filter by +500K</button>
+                        </div>
+                        <div><button class="bg-green-100 px-4 py-2 rounded hover:bg-green-400 focus:outline-none"
+                                id="yearly-budget">Yearly
+                                Budget</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end navigation container -->
+
+            <!-- content container -->
+            <div class="md:col-span-3 bg-purple-200 p-4 overflow-x-scroll h-96">
+                <div id="data-container" class="bg-red-300 p-2 mb-4 font-semibold">
+                    Click the first button to start adding employees and subsequent buttons for aggregation purpose.
+                </div>
+                <div id="yearly-budget-container" class="bg-yellow-100">
+
+                </div>
+
+
+            </div>
+            <!-- end of content container -->
+
+        </div>
+        <!-- end of parent div to the two navigation and content container -->
+
+    </div>
+    <!-- end of main app container -->
+
+</body>
+
+</html>
